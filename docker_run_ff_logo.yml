@@ -1,6 +1,7 @@
 ---
 - name: Run Docker Image
   hosts: localhost
+  become: yes
   tasks:
     - name: Pull Docker Image
       command: docker pull adolphsa/fleet_farm_logo:0.0.2
